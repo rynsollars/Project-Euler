@@ -9,5 +9,6 @@ import math
 while i <= math.sqrt(n):
     if n % i == 0:
         n = n / i
+        print i
     i = i + 1
 print n
