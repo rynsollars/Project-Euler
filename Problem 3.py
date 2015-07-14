@@ -3,7 +3,7 @@ __author__ = 'ryansollars'
 #
 # What is the largest prime factor of the number 600851475143 ?
 
-n = 600851475143
+n = 6081534
 i = 2
 import math
 while i <= math.sqrt(n):
