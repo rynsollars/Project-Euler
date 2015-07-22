@@ -16,7 +16,7 @@ answer = []
 # Above was my answer before I optimized it.
 
 import time
-
+t0 = time.time()
 def number_is_divisible_by_range(num):
     for i in divisor_range:
         if num % i == 0:
@@ -25,7 +25,6 @@ def number_is_divisible_by_range(num):
             return False
     return True
 
-t0 = time.time()
 while count < 2000000000:
     for i in divisor_range:
         num = count / i
