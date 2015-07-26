@@ -8,11 +8,11 @@ __athor__ = 'ryansollars'
 #
 # Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
-count = 1
+import time
 range1 = xrange(101)
 new_range = []
 
-
+t0 = time.time()
 for i in range1:
     num1 = i**2
     new_range.append(num1)
@@ -20,6 +20,10 @@ for i in range1:
 for x in range1:
     num2 = (sum(range1))**2
 
-
 answer = num2 - (sum(new_range))
+
+t1 = time.time()
+total_n = t1-t0
+
 print answer
+print ("The program took %s seconds to run!" % total_n)
