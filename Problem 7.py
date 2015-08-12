@@ -18,7 +18,6 @@ t1 = time.time()
 total_n = t1-t0
 
 
-print new_list
 print len(new_list)
 print new_list[10000:10001:]
 print ("The program took %s seconds to run!" % total_n)
